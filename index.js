@@ -1,5 +1,7 @@
 var app=require("./app");
 
-app.listen(3000,()=>{
+var port = process.env.PORT || 8080;
+
+app.listen(port,()=>{
     console.log("corriendo en puerto 3000");
 })
