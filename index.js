@@ -1,7 +1,7 @@
 var app=require("./app");
 
-var port = process.env.port || 5000;
+var port = process.env.port || 3002;
 
-app.listen(()=>{
-    console.log("corriendo en puerto 3000");
+app.listen(process.env.PORT, '0.0.0.0',()=>{
+    console.log("corriendo en puerto "+process.env.PORT);
 })
