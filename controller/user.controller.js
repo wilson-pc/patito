@@ -18,7 +18,7 @@ async function Create(req,res){
         let user= await prisma.user.create({data:req.body});
         res.status(200).send(user);
     } catch (error) {
-        res.status(500).send({error:error});
+        res.status(500).send(error);
     }
 }
 
